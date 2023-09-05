@@ -24,7 +24,8 @@ while(true)
 
         foreach (Meaning mean in result[0].Meanings)
         {
-            Console.WriteLine($"--> {mean.Definitions[0].definition}\n");
+            Console.WriteLine($"Definition: {mean.Definitions[0].definition}");
+            Console.WriteLine($"Example: {mean.Definitions[0].Example ?? "No example for this definition"}\n");
         }
     }
     catch (Exception)
