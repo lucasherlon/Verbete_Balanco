@@ -3,11 +3,11 @@ using verbete_balanco;
 
 var client = new HttpClient();
 string word = "";
+char delimiter = ' ';
 
-while(true)
+while (true)
 {
     Console.Write("--> Digite uma palavra para saber seu significado ou 'sair' para encerrar: ");
-    char delimiter = ' ';
 
     var words = Console.ReadLine().ToLower().Split(delimiter);
     word = string.Join("%20", words).Trim();
