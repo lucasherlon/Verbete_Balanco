@@ -6,7 +6,7 @@ string word = "";
 
 while(true)
 {
-    Console.Write("Digite uma palavra para saber seu significado ou 'sair' para encerrar: ");
+    Console.Write("--> Digite uma palavra para saber seu significado ou 'sair' para encerrar: ");
 
     word = Console.ReadLine().ToLower().Trim();
     if (word == "sair")
@@ -24,8 +24,8 @@ while(true)
 
         foreach (Meaning mean in result[0].Meanings)
         {
-            Console.WriteLine($"Definition: {mean.Definitions[0].definition}");
-            Console.WriteLine($"Example: {mean.Definitions[0].Example ?? "No example for this definition"}\n");
+            Console.WriteLine($"\n>> Definition: {mean.Definitions[0].definition}");
+            Console.WriteLine($">> Example: {mean.Definitions[0].Example ?? "No example for this definition"}\n");
         }
     }
     catch (Exception)
