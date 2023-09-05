@@ -9,7 +9,6 @@ while(true)
     Console.Write("--> Digite uma palavra para saber seu significado ou 'sair' para encerrar: ");
     char delimiter = ' ';
 
-
     var words = Console.ReadLine().ToLower().Split(delimiter);
     word = string.Join("%20", words);
 
