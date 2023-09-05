@@ -10,7 +10,7 @@ while(true)
     char delimiter = ' ';
 
     var words = Console.ReadLine().ToLower().Split(delimiter);
-    word = string.Join("%20", words);
+    word = string.Join("%20", words).Trim();
 
     if (word == "sair")
     {
